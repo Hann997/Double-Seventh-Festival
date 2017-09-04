@@ -1,4 +1,4 @@
-//开始走路
+﻿//开始走路
 function startWalk() {
 	var container = $('#content');
 	var swipe = Swipe(container);
@@ -100,5 +100,5 @@ function init() {
 		})
 
 	})
-}
+};
 window.addEventListener('load', init, false);

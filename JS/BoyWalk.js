@@ -1,4 +1,4 @@
-/**
+﻿/**
  * 小孩走路
  * @param {[type]} container [description]
  */
@@ -43,7 +43,7 @@ function BoyWalk() {
 	// 修正小男孩的正确位置
 	// 中间路的垂直距离 - 人物原始的垂直距离 - 人物缩放后的垂直距离
 	$boy.css({
-		top: pathY - (boyHeight * proportion) - boyInsideTop +15
+		top: pathY - (boyHeight * proportion) - boyInsideTop +15;
 	});
 	
 
