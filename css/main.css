@@ -1,0 +1,178 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+/*主题内容*/
+
+#content {
+	width: 100%;
+	height: 100%;
+	/*width: 60%;
+	height: 60%;
+	top: 20%;
+	left: 20%;*/
+	overflow: hidden;
+	/* 消除浮动 */
+	position: absolute;
+	/* 决定定位 */
+	border: 1px solid #ccc;
+}
+
+.content-wrap {
+	position: relative;
+	/*相对定位*/
+}
+
+
+/* .content-wrap 下的所有li元素  */
+.content-wrap>li {
+	width: 100%;
+	height: 100%;
+	background: #CAE1FF;
+	color: red;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+
+/*按钮样式*/
+
+button {
+	width: 80px;
+	height: 50px;
+}
+
+.button {
+	position: absolute;
+	bottom: 0;
+}
+
+/* 小男孩 */
+
+.charector {
+	width: 151px;
+	height: 291px;
+	background: url(../images/boy.png) -0px -291px  no-repeat;
+	position: absolute;
+	/* 设置一个元素的坐标 */
+	left: 6%;
+	top: 55%;
+}
+
+/* 人物暂停 */
+.pauseWalk{
+	-webkit-animation-play-state: paused;
+	-moz-animation-play-state: paused;
+}
+
+/*///// 慢走   //////////////////////////////*/
+/*-webkit代表chrome、safari私有属性    -moz代表firefox浏览器私有属性*/
+
+/* 普通慢走 */
+.slowWalk {
+	/* 填入动画样式规则 */
+	/* 规定@keyframes 动画的名称*/
+	-webkit-animation-name: person-slow;
+	/* 规定动画完后一个周期所花费的秒或毫秒   默认是0 */
+	-webkit-animation-duration: 950ms;
+	/* 规定动画被播放的次数 默认是1 infinite(循环播放)*/
+	-webkit-animation-iteration-count: infinite;
+	/* 动画切换的方式是一帧一帧的改变 */
+	-webkit-animation-timing-function: steps(1, start);
+	-moz-animation-name: person-slow;
+	-moz-animation-duration: 950ms;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: steps(1, start);
+}
+
+/* 携带花慢走 */
+.slowFlowerWalk{
+	-webkit-animation-name: person-flower-slow;
+	-webkit-animation-duration: 950ms;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: step-start;
+	-moz-animation-name: person-flower-slow;
+	-moz-animation-duration: 950ms;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: step-start;
+}
+
+/**  普通慢走   **/
+@-webkit-keyframes person-slow {
+	0% {
+		background-position: -0px -291px;
+	}
+	25% {
+		background-position: -602px -0px;
+	}
+	50% {
+		background-position: -302px -291px;
+	}
+	75% {
+		background-position: -151px -291px;
+	}
+	100% {
+		background-position: -0px -291px;
+	}
+}
+
+@-moz-keyframes person-slow {
+	0% {
+		background-position: -0px -291px;
+	}
+	25% {
+		background-position: -602px -0px;
+	}
+	50% {
+		background-position: -302px -291px;
+	}
+	75% {
+		background-position: -151px -291px;
+	}
+	100% {
+		background-position: -0px -291px;
+	}
+}
+
+/* 带花 */
+@-webkit-keyframes person-flower-slow{
+	0%{
+		background-position: -453px -0px;
+	}
+	25%{
+		background-position: -904px -0px;
+	}
+	50%{
+		background-position: -451px -0px;
+	}
+	74%{
+		background-position: -753px -0px;
+	}
+	100%{
+		background-position: -300px -0px;
+	}
+}
+
+@-moz-keyframes person-flower-slow{
+	0%{
+		background-position: -453px -0px;
+	}
+	25%{
+		background-position: -904px -0px;
+	}
+	50%{
+		background-position: -451px -0px;
+	}
+	74%{
+		background-position: -753px -0px;
+	}
+	100%{
+		background-position: -300px -0px;
+	}
+}
