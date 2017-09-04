@@ -1,4 +1,4 @@
-//临时调整页面
+﻿//临时调整页面
 // var swipe = Swipe($('#content'));
 // swipe.scrollTo($('#content').width()*2,500000);
 
@@ -142,12 +142,12 @@ var girl = {
 ////飘玫瑰花////
 
 snowflakeURL = [
-	'http://127.0.0.1:8020/Seven/images/snowflake/snowflake1.png',
-	'http://127.0.0.1:8020/Seven/images/snowflake/snowflake2.png',
-	'http://127.0.0.1:8020/Seven/images/snowflake/snowflake3.png',
-	'http://127.0.0.1:8020/Seven/images/snowflake/snowflake4.png',
-	'http://127.0.0.1:8020/Seven/images/snowflake/snowflake5.png',
-	'http://127.0.0.1:8020/Seven/images/snowflake/snowflake6.png'
+	'./images/snowflake/snowflake1.png',
+	'./images/snowflake/snowflake2.png',
+	'./images/snowflake/snowflake3.png',
+	'./images/snowflake/snowflake4.png',
+	'./images/snowflake/snowflake5.png',
+	'./images/snowflake/snowflake6.png'
 ]
 
 function snowflake() {
@@ -210,8 +210,8 @@ function snowflake() {
 //音乐配置
 var audioConfig = {
 	enable: true, //是否开启音乐
-	playURL: 'http://127.0.0.1:8020/Seven/music/happy.wav', // 正常播放地址
-	cycleURL: 'http://127.0.0.1:8020/Seven/music/circulation.wav' // 正常循环播放地址
+	playURL: './music/happy.wav', // 正常播放地址
+	cycleURL: './music/circulation.wav' // 正常循环播放地址
 };
 
 ///////////
