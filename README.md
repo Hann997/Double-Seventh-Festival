@@ -14,3 +14,12 @@
 - 采用保证可以解决异步编程的逻辑嵌套问题
 
 ### 效果图
+第一个界面：实现了小男孩走路、太阳、白云动画
+![Image1](https://github.com/Hannn997/Double-Seventh-Festival/blob/master/impression%20drawing/image1.png)
+
+第二个界面：实现了小男孩走路、进出超市、开关灯、飞鸟动画
+![Image2](https://github.com/Hannn997/Double-Seventh-Festival/blob/master/impression%20drawing/image2.png)
+
+第三个界面：实现了小男孩走路、上桥、星星、河流、转身动画
+![Image3](https://github.com/Hannn997/Double-Seventh-Festival/blob/master/impression%20drawing/image3.png)
+
