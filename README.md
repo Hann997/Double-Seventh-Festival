@@ -23,3 +23,4 @@
 第三个界面：实现了小男孩走路、上桥、星星、河流、转身动画
 ![Image3](https://github.com/Hannn997/Double-Seventh-Festival/blob/master/impression%20drawing/image3.png)
 
+![Image4](https://github.com/Hannn997/Double-Seventh-Festival/blob/master/impression%20drawing/image4.png)
