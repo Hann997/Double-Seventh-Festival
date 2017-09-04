@@ -1,0 +1,139 @@
+/*第一页背景图*/
+
+.a_background{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.a_background_top{
+	width: 100%;
+	height: 71.6%;
+	background-image: url(../images/background/a_background_top.png);
+	background-size: 100% 100%;
+}
+
+.a_background_middle{
+	width: 100%;
+	height: 13.1%;
+	background-image: url(../images/background/a_background_middle.png);
+	background-size: 100% 100%;
+}
+
+.a_background_bottom{
+	width: 100%;
+	height: 15.3%;
+	background-image: url(../images/background/a_background_botton.png);
+	background-size: 100% 100%;
+}
+
+/*-------- 太阳自转以及动画 --------*/
+#sun{
+	background: url(../images/sun.png) no-repeat;
+	position: absolute;
+	z-index: 1;
+	top: -30px;
+	height: 201px;
+	width: 201px;
+	right: 40%;
+}
+
+.ratotion{
+	-webkit-animation-name: rotation;
+	-webkit-animation-duration: 30s;
+	-moz-animation-name: rotation;
+	-moz-animation-duration: 30s;
+}
+
+@-webkit-keyframes rotation{
+	0%{
+		transform: translateX(0) translateY(0);
+	}
+	100%{
+		transform: translateX(-2000px) translateY(400px);
+	}
+}
+
+@-moz-keyframes rotation{
+	0%{
+		transform: translateX(0) translateY(0);
+	}
+	100%{
+		transform: translateX(-2000px) translateY(400px);
+	}
+}
+
+ /* 天空云 */
+.cloud{
+	z-index: 2;
+	position: absolute;
+} 
+
+.cloud1{
+	width: 181px;
+	height: 101px;
+	left: -5%;
+	top: 15%;
+	background: url(../images/cloud1.png);
+}
+
+.cloud2{
+	width: 301px;
+	height: 140px;
+	right: -5%;
+	top: 0;
+	background: url(../images/cloud2.png);
+}
+
+.cloud1Anim{
+	-webkit-animation-name: smallCloud;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-name: smallCloud;
+	-moz-animation-duration: 20s;
+	-moz-animation-iteration-count: infinite;
+}
+
+.cloud2Anim{
+	-webkit-animation-name: largeCloud;
+	-webkit-animation-duration: 40s;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-name: largeCloud;
+	-moz-animation-duration: 40s;
+	-moz-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes smallCloud{
+	0%{
+		left:-5%;
+	}
+	100%{
+		left: 100%;
+	}
+}
+
+@-moz-keyframes smallCloud{
+	0%{
+		left: -5%;
+	}
+	100%{
+		left: 100%;
+	}
+}
+
+@-webkit-keyframes largeCloud{
+	0%{
+		right: -5%;
+	}
+	100%{
+		right: 100%;
+	}
+}
+@-moz-keyframes largeCloud{
+	0%{
+		right: -5%;
+	}
+	100%{
+		right: 100%;
+	}
+}

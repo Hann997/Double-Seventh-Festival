@@ -1,0 +1,418 @@
+
+/*背景图*/
+
+.c_background {
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	position: absolute;
+}
+
+.c_background_top {
+	width: 100%;
+	height: 71.6%;
+	background-image: url(../images/background/c_background_top.png);
+	background-size: 100% 100%;
+}
+
+.c_background_middle {
+	width: 100%;
+	height: 13.1%;
+	background-image: url(../images/background/c_background_middle.png);
+	background-size: 100% 100%;
+}
+
+.c_background_bottom {
+	width: 100%;
+	height: 15.3%;
+	background-image: url(../images/background/c_background_botton.png);
+	background-size: 100% 100%;
+}
+
+/*小女孩*/
+
+.girl {
+	background: url(../images/girl.png) -755px -0px no-repeat;
+	position: absolute;
+	right: 40%;
+	top: 37%;
+	width: 151px;
+	height: 291px;
+}
+
+.gril-rotate{
+	-webkit-animation-name: girl-rotate;
+	-webkit-animation-duration: 850ms;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: step-start;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-name: girl-rotate;
+	-moz-animation-duration: 850ms;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-timing-function: step-start;
+	-moz-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes girl-rotate{
+	0%{
+		background-position: -604px -0px;
+	}
+	16.7%{
+		background-position: -151px -0px;
+	}
+	33.4%{
+		background-position: -906px -0px;
+	}
+	50.1%{
+		background-position: -0px -0px;
+	}
+	66.8%{
+		background-position: -302px -0px;
+	}
+	83.5%{
+		background-position: -453px -0px;
+	}
+	100%{
+		background-position: -604px -0px;
+	}
+}
+
+@-moz-keyframes girl-rotate{
+	0%{
+		background-position: -604px -0px;
+	}
+	16.7%{
+		background-position: -151px -0px;
+	}
+	33.4%{
+		background-position: -906px -0px;
+	}
+	50.1%{
+		background-position: -0px -0px;
+	}
+	66.8%{
+		background-position: -302px -0px;
+	}
+	83.5%{
+		background-position: -453px -0px;
+	}
+	100%{
+		background-position: -604px -0px;
+	}
+}
+/*人物初始化*/
+.boyOriginal {
+       background-position: -150px -0px;
+   }
+/** 小男孩转身 **/
+.boy-rotate{
+	-webkit-animation-name: boy-rotate;
+	-webkit-animation-duration: 850ms;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: step-start;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-name: boy-rotate;
+	-moz-animation-duration: 850ms;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-timing-function: step-start;
+	-moz-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes boy-rotate{
+	0%{
+		background-position: -603px -0px;
+	}
+	16.7%{
+		background-position: -151px -0px;
+	}
+	33.4%{
+		background-position: -453px -291px;
+	}
+	50.1%{
+		background-position: -0px -0px;
+	}
+	66.8%{
+		background-position: -903px -291px;
+	}
+	83.5%{
+		background-position: -753px -291px;
+	}
+	100%{
+		background-position: -603px -291px;
+	}
+}
+
+@-moz-keyframes boy-rotate{
+	0%{
+		background-position: -603px -0px;
+	}
+	16.7%{
+		background-position: -151px -0px;
+	}
+	33.4%{
+		background-position: -453px -291px;
+	}
+	50.1%{
+		background-position: -0px -0px;
+	}
+	66.8%{
+		background-position: -903px -291px;
+	}
+	83.5%{
+		background-position: -753px -291px;
+	}
+	100%{
+		background-position: -603px -291px;
+	}
+}
+
+/*桥*/
+
+.bridge-bottom {
+	position: absolute;
+	width: 41%;
+	height: 24%;
+	left: 29.5%;
+	top: 76%;
+	overflow: hidden;
+}
+
+
+/*波浪水布局*/
+
+.water {
+	width: 100%;
+	height: 100%;
+}
+
+.water_1,
+.water_2,
+.water_3,
+.water_4 {
+	width: 100%;
+	position: absolute;
+	height: 50%;
+	-webkit-animation-name: shake;
+	-webkit-animation-duration: 40s;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-name: shake;
+	-moz-animation-duration: 40s;
+	-moz-animation-direction: 40s;
+	-moz-animation-direction: alternate;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+}
+
+.water_1 {
+	width: 131px;
+	height: 15px;
+	top: 13%;
+	left: 35%;
+	background: url(../images/water.png) -261px -0px no-repeat;
+}
+
+.water_2 {
+	width: 161px;
+	height: 9px;
+	top: 30%;
+	left: 45%;
+	background: url(../images/water.png) -693px -0px no-repeat;
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+}
+
+.water_3 {
+	width: 261px;
+	height: 29px;
+	top: 50%;
+	left: 15%;
+	background: url(../images/water.png) -0px -0px no-repeat;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+}
+
+.water_4 {
+	width: 301px;
+	height: 12px;
+	top: 75%;
+	left: 30%;
+	background: url(../images/water.png) -392px -0px no-repeat;
+	-webkit-animation-delay: 3s;
+	-moz-animation-delay: 3s;
+}
+
+@-webkit-keyframes shake {
+	0%,
+	100% {
+		-webkit-transform: translate3d(0, 0, 0);
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		-webkit-transform: translate3d(-30px, 0px, 0);
+	}
+	20%,
+	40%,
+	60%,
+	80% {
+		-webkit-transform: translate3d(30px, 0px, 0);
+	}
+}
+
+@-moz-keyframes shale {
+	0%,
+	100% {
+		-webkit-transform: translate3d(0, 0, 0);
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		-webkit-transform: translate3d(-30px, 0px, 0);
+	}
+	20%,
+	40%,
+	60%,
+	80% {
+		-webkit-transform: translate3d(30px, 0px, 0);
+	}
+}
+
+
+/*星星*/
+
+.stars {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.stars>li {
+	position: absolute;
+	width: 30px;
+	height: 31px;
+	background-image: url(../images/stars.png);
+	-webkit-animation-name: flash;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-moz-animation-name: flash;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-direction: alternate;
+}
+
+.stars1 {
+	top: 20%;
+	left: 30%;
+	-webkit-animation-duration: 5s;
+	-moz-animation-duration: 5s;
+}
+
+.stars2 {
+	top: 15%;
+	left: 20%;
+	-webkit-animation-duration: 5s;
+	-moz-animation-duration: 5s;
+}
+
+.stars3 {
+	top: 25%;
+	left: 85%;
+	-webkit-animation-duration: 5s;
+	-moz-animation-duration: 5s;
+}
+
+.stars4 {
+	top: 30%;
+	left: 70%;
+	-webkit-animation-duration: 5s;
+	-moz-animation-duration: 5s;
+}
+
+.stars5 {
+	top: 25%;
+	left: 20%;
+	-webkit-animation-duration: 5s;
+	-moz-animation-duration: 5s;
+}
+
+.stars6 {
+	top: 10%;
+	left: 65%;
+	-webkit-animation-duration: 5s;
+	-moz-animation-duration: 5s;
+}
+
+@-webkit-keyframes flash {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes flash {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
+
+/*雪花*/
+#snowflake{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.snowRoll{
+	position: absolute;
+	opacity: 0;
+	-webkit-animation-name: mysnow;
+	-webkit-animation-duration: 20s;
+	-moz-animation-name: mysnow;
+	-moz-animation-duration: 20s;
+	height: 80px;
+}
+
+@-webkit-keyframes mysnow{
+	0%{
+		bottom: 100%;
+	}
+	50%{
+		-webkit-transform: rotate(1080deg);
+	}
+	100%{
+		-webkit-transform: rotate(0deg) translate3d(50px,50px,50px);
+	}
+}
+
+@-moz-keyframes mysnow{
+	0%{
+		bottom: 100%;
+	}
+	50%{
+		-webkit-transform: rotate(1080deg);
+	}
+	100%{
+		-webkit-transform: rotate(0deg) translate3d(50px,50px,50px);
+	}
+}
